@@ -1,5 +1,6 @@
 package com.captain.ak.roomwordssample;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 
@@ -15,7 +16,7 @@ public interface Dao {
     void deleteAll();
 
     @Query("SELECT * from WORD_TABLE ORDER BY word ASC")
-    List<Word> getAllWords();
+    LiveData<List<Word>> getAllWords();
 
 
 
