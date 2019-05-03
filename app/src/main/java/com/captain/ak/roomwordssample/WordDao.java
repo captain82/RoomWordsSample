@@ -7,7 +7,7 @@ import android.arch.persistence.room.Query;
 import java.util.List;
 
 @android.arch.persistence.room.Dao
-public interface Dao {
+public interface WordDao {
 
     @Insert
     void insert(Word word);
